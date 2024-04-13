@@ -1,0 +1,33 @@
+{% extends "home.html" %}
+{% block content %}
+
+
+<h1>Update Facility</h1>
+
+<form method="post">
+  {% csrf_token %}
+  <label for="fac_id">Facility ID:</label>
+  <input type="text" id="fac_id" name="fac_id">
+  <br>
+  <label for="fname">First Name:</label>
+  <input type="text" id="fname" name="fname">
+  <br>
+  <label for="lname">Last Name:</label>
+  <input type="text" id="lname" name="lname">
+  <br>
+  <label for="salary">Salary:</label>
+  <input type="text" id="salary" name="salary">
+  <br>
+  <label for="role">Role:</label>
+  <input type="text" id="role" name="role">
+  <br>
+  <label for="dept">Department:</label>
+  <input type="text" id="dept" name="dept">
+  <br>
+  <label for="phoneno">Phone Number:</label>
+  <input type="text" id="phoneno" name="phoneno">
+  <br>
+  <input type="submit" value="Update">
+</form>
+
+{% endblock content %}
